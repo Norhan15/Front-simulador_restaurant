@@ -1,16 +1,16 @@
 package org.example;
 
-import com.almasb.fxgl.app.GameApplication;
-import com.almasb.fxgl.app.GameSettings;
-import com.almasb.fxgl.entity.Entity;
-import com.almasb.fxgl.dsl.FXGL;
-import javafx.scene.paint.Color;
+import java.util.List;
+
 import org.example.scene.Entrance;
 import org.example.scene.Kitchen;
 import org.example.scene.Reception;
 import org.example.scene.Table;
 
-import java.util.List;
+import com.almasb.fxgl.app.GameApplication;
+import com.almasb.fxgl.app.GameSettings;
+import com.almasb.fxgl.dsl.FXGL;
+import com.almasb.fxgl.entity.Entity;
 
 public class Main extends GameApplication {
 
@@ -44,7 +44,7 @@ public class Main extends GameApplication {
         FXGL.getGameWorld().addEntity(kitchen);
 
         // Create 9 tables
-        tables = Table.createTables(3, 3, 450, 150);
+        tables = Table.createTables(5, 4, 350, 50);
         tables.forEach(FXGL.getGameWorld()::addEntity);
     }
 

@@ -1,7 +1,7 @@
 package org.example.scene;
 
-import com.almasb.fxgl.entity.Entity;
 import com.almasb.fxgl.dsl.FXGL;
+import com.almasb.fxgl.entity.Entity;
 
 
 public class Reception {
